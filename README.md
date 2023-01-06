@@ -1,6 +1,8 @@
 # Ruby on Rails Google Sheet CSV
 
-This is pure Ruby implementation. No gems.
+Download data from Google Sheet as CSV and parse it as array of hashes.
+
+This is pure Ruby implementation. No gems. Just 1 method.
 
 ## Prepare your Google Sheet
 1. Open your Google Sheet

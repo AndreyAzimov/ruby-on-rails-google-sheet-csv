@@ -1,6 +1,6 @@
 # Ruby on Rails Google Sheet CSV
 
-Download data from Google Sheet as CSV and parse it as array of hashes.
+Download data from Google Sheet as CSV to Rails public folder and parse it as array of hashes.
 
 This is pure Ruby on Rails implementation. No gems. Just 1 method.
 
@@ -20,3 +20,6 @@ This is pure Ruby on Rails implementation. No gems. Just 1 method.
 url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRfSXjhd7hDjagB7sX9CX1K7lDWJ6djduoILKoyZAYTWihbC8W336ZH-MtXIPNsulhy6sga/pubhtml?gid=0&single=true"
 data = GoogleSheet.get url
 ```
+
+If you are not using Ruby on Rails change csv file path to your:
+```csv_file = "#{Rails.root}/public/data.csv"```

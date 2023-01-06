@@ -11,7 +11,7 @@ Data in the Google Sheet is updating live automatically.
 It was on Heroku as well.
 
 ## Prepare your Google Sheet
-1. Open your Google Sheet
+1. Open your Google Sheet e.g. [this one](https://docs.google.com/spreadsheets/d/1A4ad-FM0SR-LiCRN301w-WnW-H7wFg2BJ7QMLsGJxqw/edit?usp=sharing)
 2. File -> Share -> Publish to the web
 3. Entire Document -> Sheet1
 4. Web page -> Comma-separated values (.csv)

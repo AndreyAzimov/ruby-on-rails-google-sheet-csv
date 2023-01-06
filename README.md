@@ -4,6 +4,8 @@ This method will help you to download data from Google Sheet as CSV to Rails pub
 
 This is pure Ruby on Rails implementation. No gems. Just 1 method.
 
+It was on Heroku as well.
+
 ## Prepare your Google Sheet
 1. Open your Google Sheet
 2. File -> Share -> Publish to the web

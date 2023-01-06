@@ -1,5 +1,7 @@
 # Ruby on Rails Google Sheet CSV
 
+This is pure Ruby on Rails implementation. No gems.
+
 ## Prepare your Google Sheet
 1. Open your Google Sheet
 2. File -> Share -> Publish to the web

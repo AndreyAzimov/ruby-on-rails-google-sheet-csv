@@ -1,12 +1,5 @@
 class GoogleSheet
-  # Open Google Sheet
-  # File -> Share -> Publish to the web
-  # Entire Document -> Sheet1
-  # Web page -> Comma-separated values (.csv)
-  # Share
-  # Copy that link that should look like this: https://docs.google.com/spreadsheets/d/e/2PACX-1vRfSXjhd7hDjagB7sX9CX1K7lDWJ6djduoILKoyZAYTWihbC8W336ZH-MtXIPNsulhy6sga/pubhtml?gid=0&single=true
-  #
-  # Usage GoogleSheet.get "https://docs.google.com/spreadsheets/d/e/2PACX-1vRfSXjhd7hDjagB7sX9CX1K7lDWJ6djduoILKoyZAYTWihbC8W336ZH-MtXIPNsulhy6sga/pubhtml?gid=0&single=true"
+  # https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/README.md
 
   require 'open-uri'
   require 'csv'
@@ -15,11 +8,13 @@ class GoogleSheet
 
     csv_file = "#{Rails.root}/public/data.csv"
 
+    csv_with_headers = true
+
     open(url) {|f| File.open(csv_file,"wb") {|file| file.write f.read}}
 
     parsed_data = []
 
-    CSV.open(csv_file, 'r:bom|utf-8', headers: true).each do |row|
+    CSV.open(csv_file, 'r:bom|utf-8', headers: csv_with_headers).each do |row|
       parsed_data << row.to_hash
     end
 

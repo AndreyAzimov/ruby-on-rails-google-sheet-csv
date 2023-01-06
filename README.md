@@ -1,6 +1,6 @@
 # How to get data from Google Sheet using Ruby on Rails?
 
-![alt text](img.png "image")
+![alt text](img2.png "image")
 
 This method will help you to download data from Google Sheet as CSV to Rails public folder (or any other folder) and parse it as array of hashes.
 

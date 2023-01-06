@@ -2,7 +2,7 @@
 
 This method will help you to download data from Google Sheet as CSV to Rails public folder (or any other folder) and parse it as array of hashes.
 
-This is pure Ruby on Rails implementation. No gems. Just a [single file](https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/google_sheet.rb)
+This is pure Ruby on Rails implementation. No gems. Just a [single file](https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/google_sheet.rb).
 
 Data in the Google Sheet is updating live automatically.
 

@@ -1,8 +1,8 @@
 class GoogleSheet
-  # https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/README.md
-
   require 'open-uri'
   require 'csv'
+
+  # https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/README.md
 
   def self.get url
 
@@ -12,12 +12,10 @@ class GoogleSheet
 
     open(url) {|f| File.open(csv_file,"wb") {|file| file.write f.read}}
 
-    parsed_data = []
+    data = []
 
-    CSV.open(csv_file, 'r:bom|utf-8', headers: csv_with_headers).each do |row|
-      parsed_data << row.to_hash
-    end
+    CSV.open(csv_file, 'r:bom|utf-8', headers: csv_with_headers).each{|row| data << row.to_hash}
 
-    return parsed_data
+    return data
   end
 end

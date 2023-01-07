@@ -35,7 +35,7 @@ class GoogleSheet
     data = []
   
     # parse each csv row
-    CSV.open(csv_file, 'r:bom|utf-8', headers: true).each{|row| data << row.to_hash}
+    CSV.open(csv_file, headers: true).each{|row| data << row.to_hash}
 
     return data
   end

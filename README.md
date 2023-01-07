@@ -8,7 +8,7 @@ This is pure Ruby on Rails implementation. No gems. Just a [single file](https:/
 
 Data in the Google Sheet is updating live automatically.
 
-It was on Heroku as well.
+It's working on Heroku.
 
 ## Prepare your Google Sheet
 1. Open your Google Sheet e.g. [this one](https://docs.google.com/spreadsheets/d/1A4ad-FM0SR-LiCRN301w-WnW-H7wFg2BJ7QMLsGJxqw/edit?usp=sharing)

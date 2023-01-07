@@ -53,4 +53,4 @@ data = GoogleSheet.get url
 ## Options:
 - If you are not using Ruby on Rails change csv file path to your: ```csv_file = "#{Rails.root}/public/data.csv"```
 - if your CSV doesn't have headers change `headers: false`
-- If you want to have JSON output use `render json: data` in your controller.
+- If you want to have JSON output use `render json: data` in your controller (Ruby on Rails only).

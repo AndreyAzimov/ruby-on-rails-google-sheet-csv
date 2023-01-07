@@ -19,7 +19,7 @@ It's working on Heroku.
 6. Copy the url that should look like this: [https://docs.google.com/spreadsheets/d/e/2PACX-1vSf0VkQ9iCihfZqlNDg04GTso_seU8Pom53YtPjGc6PrUlJ1bY9b6WHARo2MQFJnLbrt4P7-PlnNm4_/pub?gid=0&single=true&output=csv](https://docs.google.com/spreadsheets/d/e/2PACX-1vSf0VkQ9iCihfZqlNDg04GTso_seU8Pom53YtPjGc6PrUlJ1bY9b6WHARo2MQFJnLbrt4P7-PlnNm4_/pub?gid=0&single=true&output=csv)
 
 ## Usage
-- Copy the following `google_sheet.rb` file to `/app/models/` (if you are using Rails)
+1. Copy the following code:
 ```ruby
 class GoogleSheet
   require 'open-uri'
@@ -40,7 +40,9 @@ class GoogleSheet
 end
 ```
 
-Usage:
+2. Save it as `google_sheet.rb` file to `/app/models/` (if you are using Rails)
+
+3. Usage:
 
 ```
 url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf0VkQ9iCihfZqlNDg04GTso_seU8Pom53YtPjGc6PrUlJ1bY9b6WHARo2MQFJnLbrt4P7-PlnNm4_/pub?gid=0&single=true&output=csv"

@@ -20,7 +20,29 @@ It was on Heroku as well.
 
 ## Usage
 - Copy [google_sheet.rb](https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/google_sheet.rb) file to `/app/models/` (if you are using Rails)
-- Usage:
+```
+class GoogleSheet
+  require 'open-uri'
+  require 'csv'
+
+  # https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/README.md
+
+  def self.get url
+
+    csv_file = "#{Rails.root}/public/data.csv"
+
+    open(url) {|f| File.open(csv_file,"wb") {|file| file.write f.read}}
+
+    data = []
+
+    CSV.open(csv_file, 'r:bom|utf-8', headers: true).each{|row| data << row.to_hash}
+
+    return data
+  end
+end
+```
+
+Usage:
 
 ```
 url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf0VkQ9iCihfZqlNDg04GTso_seU8Pom53YtPjGc6PrUlJ1bY9b6WHARo2MQFJnLbrt4P7-PlnNm4_/pub?gid=0&single=true&output=csv"

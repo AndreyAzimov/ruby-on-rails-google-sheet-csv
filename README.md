@@ -25,8 +25,6 @@ class GoogleSheet
   require 'open-uri'
   require 'csv'
 
-  # https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/README.md
-
   def self.get url
 
     csv_file = "#{Rails.root}/public/data.csv"

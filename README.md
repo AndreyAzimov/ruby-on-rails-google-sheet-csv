@@ -19,8 +19,8 @@ It was on Heroku as well.
 6. Copy the url that should look like this: [https://docs.google.com/spreadsheets/d/e/2PACX-1vSf0VkQ9iCihfZqlNDg04GTso_seU8Pom53YtPjGc6PrUlJ1bY9b6WHARo2MQFJnLbrt4P7-PlnNm4_/pub?gid=0&single=true&output=csv](https://docs.google.com/spreadsheets/d/e/2PACX-1vSf0VkQ9iCihfZqlNDg04GTso_seU8Pom53YtPjGc6PrUlJ1bY9b6WHARo2MQFJnLbrt4P7-PlnNm4_/pub?gid=0&single=true&output=csv)
 
 ## Usage
-- Copy [google_sheet.rb](https://github.com/AndreyAzimov/ruby-on-rails-google-sheet-csv/blob/main/google_sheet.rb) file to `/app/models/` (if you are using Rails)
-```
+- Copy `google_sheet.rb` file to `/app/models/` (if you are using Rails)
+```ruby
 class GoogleSheet
   require 'open-uri'
   require 'csv'
